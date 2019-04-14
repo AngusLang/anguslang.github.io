@@ -1,0 +1,25 @@
+#background {
+  font: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#tab {
+  display: inline-block;
+  width: 20%;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+#gallery {
+  display: inline-block;
+  width: 80%;
+  background-color: #f1f3f5;
+  font-size: 14px;
+}
+
+.tab-label {
+  cursor: pointer;
+  padding: 10px;
+}
