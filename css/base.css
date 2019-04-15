@@ -1,5 +1,5 @@
 #background {
-  font: 0;
+  font-size: 0;
   width: 100%;
   height: 100%;
 }
@@ -10,16 +10,50 @@
   background-color: #f1f1f1;
   font-size: 14px;
   vertical-align: top;
+  position: fixed;
+  top: 10%;
 }
 
 #gallery {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  border-radius: 2px;
+
   display: inline-block;
   width: 80%;
   background-color: #f1f3f5;
   font-size: 14px;
+  box-shadow: 0 0 4px #888;
 }
 
 .tab-label {
   cursor: pointer;
   padding: 10px;
+}
+
+.tab-enabled {
+  background-color: #111;
+  color: #f1f3f5;
+}
+
+.tab-disabled {
+  background-color: #f1f3f5;
+}
+
+.tab-disabled:hover {
+  animation: grad;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+#foot {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  height: 20px;
+  font-size: 10px;
+  color: #888;
 }

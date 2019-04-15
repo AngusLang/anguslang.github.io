@@ -1,1 +1,1 @@
-var doc_config = {"Hello":"Hello.md"}
+var doc_config = {"Hello":"Hello.md","SimpleGeometry":"SimpleGeometry.md"}
