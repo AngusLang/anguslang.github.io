@@ -1,7 +1,3 @@
-const doc_config = {
-  'Hello': 'Hello.md'
-}
-
 class App {
 
   gallery_element;
