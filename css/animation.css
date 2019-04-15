@@ -1,14 +1,14 @@
 @keyframes grad {
   0% {
-    background-color: #eecccc;
-  }
-  33% {
     background-color: #cceecc;
   }
+  33% {
+    background-color: #ccccee
+  }
   66% {
-    background-color: #ccccee;
+    background-color: #eecccc;
   }
   100% {
-    background-color: #eecccc;
+    background-color: #cceecc;
   }
 }
