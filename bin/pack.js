@@ -11,7 +11,8 @@ function main() {
   files.forEach(file => {
     const name = path.basename(file, '.md');
     if (name) {
-      config[name] = file;
+      const stat = fs.statSync(path.join(dir, file));
+      config[name] = {file: file, ctime: stat.ctimeMs};
     }
   });
 

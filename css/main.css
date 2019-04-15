@@ -33,6 +33,6 @@ a:visited {
   color: #338833;
 }
 
-code {
-  word-wrap: break-word;
+small {
+  color: #888;
 }

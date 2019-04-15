@@ -18,8 +18,13 @@ class App {
 
   load_config(config) {
     const names = Object.getOwnPropertyNames(config);
+    const ctime_sort = function(a, b) {
+      return config[a].ctime - config[b].ctime;
+    }
+    names.sort(ctime_sort);
     this.tab_name = names[0];
-    names.forEach((name) => {
+    for(let i = 0; i < names.length; ++i) {
+      const name = names[i];
       this.tabs.set(name, config[name]);
       const t = document.createElement('div');
       t.className = 'tab-label tab-disabled';
@@ -30,7 +35,7 @@ class App {
       }
       this.tab_elements.push(t);
       this.tab_root.appendChild(t);
-    });
+    }
   }
 
   launch() {
@@ -53,12 +58,18 @@ class App {
 
   async load_tab(name) {
     this.tab_name = name;
-    const response = await fetch(this.tab_base + this.tabs.get(name));
+    const tab_info = this.tabs.get(name);
+    const response = await fetch(this.tab_base + tab_info.file);
     const content = marked(await response.text());
-    this.gallery_root.innerHTML = content;
+    const date = new Date(tab_info.ctime);
+    this.gallery_root.innerHTML = content + `<p class="date">${date.toDateString()}</p>`;
 
     this.deactivate_tab();
     this.active_tab(name);
+
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
   }
 
 }
