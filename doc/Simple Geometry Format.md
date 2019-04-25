@@ -4,7 +4,8 @@ Simple Geometry Format
 ### Header
 Name        | Type | Description
 ------------|------|------------
-magic number|u32 x 1  | value 0x42
+magic number|u16 x 1 | value 0x19 0x94
+verison     |u16 x 1 | version number
 index count |u32 x 1 | index buffer length
 position count | u32 x 1 | position buffer count
 total length | u32 x 1 | file byte length
