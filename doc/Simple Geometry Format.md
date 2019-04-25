@@ -1,8 +1,8 @@
 Simple Geometry Format
 ======================
 
-### header
-name        | type | description
+### Header
+Name        | Type | Description
 ------------|------|------------
 magic number|u32 x 1  | value 0x42
 index count |u32 x 1 | index buffer length
@@ -12,11 +12,11 @@ placeholder | u32 x 4 | placeholder
 
 header to total length 32 bytes
 
-### content
+### Content
 > i in index count  
 > n is position count  
 
-name        | type | description
+Name        | Type | Description
 ------------|------|------------
 index buffer | u32 x i| index buffer data
 position buffer | f32 x 3 x n | position buffer data

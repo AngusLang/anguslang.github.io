@@ -36,3 +36,17 @@ a:visited {
 small {
   color: #888;
 }
+
+table {
+  border: 1px solid #aaa;
+  padding: 0;
+}
+
+th {
+  width: 20%;
+  text-align: left;
+}
+
+td {
+  text-align: left;
+}
