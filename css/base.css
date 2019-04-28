@@ -27,10 +27,6 @@
   transition: width 0.6s ease-in-out;
 }
 
-#gallery:hover {
-  width: 88%;
-}
-
 .tab-label {
   cursor: pointer;
   padding: 10px;

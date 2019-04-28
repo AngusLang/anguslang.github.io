@@ -12,3 +12,9 @@
     background-color: #cceecc;
   }
 }
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0.1);
+  }
+}

@@ -72,6 +72,9 @@ function main() {
   const app = new App();
   app.launch();
   window.app = app;
+
+  window.addEventListener('touchstart', function(event) {
+  });
 }
 
 main();
