@@ -73,9 +73,9 @@ function main() {
   app.launch();
   window.app = app;
 
-  const tab_name = window.location.href.split('#').pop();
-  if (tab_name) {
-    app.load_tab(decodeURI(tab_name));
+  const params = window.location.href.split('#');
+  if (params.length > 1) {
+    app.load_tab(decodeURI(params.pop()));
   } else {
     app.load_tab('Hello');
   }
