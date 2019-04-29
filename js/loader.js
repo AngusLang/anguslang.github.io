@@ -34,7 +34,6 @@ function App() {
 
   this.launch = function() {
     scope.load_config(doc_config);
-    scope.load_tab(scope.tab_name);
   }
 
   scope.deactivate_tab = function() {
@@ -52,6 +51,7 @@ function App() {
   }
 
   this.load_tab = async function(name) {
+    if (!scope.tabs.has(name)) { return; }
     scope.tab_name = name;
     const tab_info = scope.tabs.get(name);
     const response = await fetch(scope.tab_base + tab_info.file);
@@ -73,8 +73,12 @@ function main() {
   app.launch();
   window.app = app;
 
-  window.addEventListener('touchstart', function(event) {
-  });
+  const tab_name = window.location.href.split('#').pop();
+  if (tab_name) {
+    app.load_tab(decodeURI(tab_name));
+  } else {
+    app.load_tab('Hello');
+  }
 }
 
 main();
