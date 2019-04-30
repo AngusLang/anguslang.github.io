@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+        <rect id="Rectangle" fill="#444444" x="6" y="7" width="28" height="5" rx="2"></rect>
+        <rect id="Rectangle" fill="#444444" x="6" y="17" width="28" height="5" rx="2"></rect>
+        <rect id="Rectangle" fill="#444444" x="6" y="27" width="28" height="5" rx="2"></rect>
+    </g>
+</svg>

@@ -1,6 +1,34 @@
 @media only screen and (max-width: 600px) {
-  #tab {
+  /* #tab {
     display: none;
+  } */
+
+  #tab-container {
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 0 4px #aaa;
+    transition: width,height 0.3s ease-in-out;
+    overflow: scroll;
+    z-index: 10;
+  }
+
+  #tab {
+    position: absolute;
+    display: inline-block;
+    display: none;
+    width: 100%;
+    top: 0;
+  }
+
+  #tab-toggle {
+    width: 40px;
+    height: 40px;
+    background-image: url(../image/menu.svg);
   }
 
   #foot {
