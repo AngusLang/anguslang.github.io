@@ -1,2 +1,0 @@
-Accelerate Structure
-====================
