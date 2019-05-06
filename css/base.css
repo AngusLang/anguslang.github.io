@@ -23,7 +23,7 @@
   width: 80%;
   background-color: #fcfcfc;
   font-size: 14px;
-  box-shadow: 0 0 2px #c1c3c5;
+  box-shadow: 0 0 3px #c1c3c5;
   transition: width 0.6s ease-in-out;
 }
 
