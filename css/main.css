@@ -63,3 +63,7 @@ blockquote {
   background-color: #f1f1f1;
   width: 60%;
 }
+
+img {
+  width: 256px;
+}
