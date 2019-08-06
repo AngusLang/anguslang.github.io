@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>unwrap verify</title>
+  <link rel="shortcut icon" href="sample.png" type="image/png">
+  <script src="three.min.js"></script>
+  <script src="orbit.js"></script>
+  <script src="objloader.js"></script>
+</head>
+<style>
+html, body, canvas {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#hint {
+  width: 100%;
+  position: fixed;
+  top: 10px;
+  margin: 0;
+  text-align: center;
+  color: #a1a3a5;
+}
+#transform {
+  width: 100px;
+  height: 30px;
+  bottom: 10px;
+  left: 10px;
+  position: fixed;
+}
+</style>
+<body>
+  <h5 id="hint">Drop File On Canvas [OBJ]</h5>
+  <canvas id="canvas"></canvas>
+  <div id="transform-container">
+    <input type="range" id="transform" min="0" max="1" step="0.0001" value="0">
+  </div>
+</body>
+<script src="common.js"></script>
+<script src="ondrop.js"></script>
+<script src="varify.js"></script>
+<script src="main.js"></script>
+</html>

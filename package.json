@@ -1,0 +1,12 @@
+{
+  "name": "angus-lang-blog",
+  "version": "0.0.1",
+  "description": "angus lang blog",
+  "main": "index.js",
+  "repository": "git@github.com:AngusLang/anguslang.github.io.git",
+  "author": "angus <lang@zjxu.org>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "node bin/pack.js"
+  }
+}
