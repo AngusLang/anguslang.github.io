@@ -1,15 +1,14 @@
 About Me
 =====
 
-## A computer graphics programmer who wants live in the future.
-<br/>
+## Li Lang   
 
-Name: Li Lang   
-Email: lilang8936@gmail.com   
+## A computer graphics programmer who wants live in the future.
 
 ### Contact
 Github:    [github/AngusLang](https://github.com/AngusLang)   
 Twitter:    [Lang](https://twitter.com/89eaj6EU4xX7H4x)
+Email: lilang8936@gmail.com
 
 ### Employment History
 2018 Mar 5 - Now   
