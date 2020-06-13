@@ -8,6 +8,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 const tab_container = document.getElementById('tab-container');
 const tab = document.getElementById('tab');
 const tab_toggle = document.getElementById('tab-toggle');
+
 const tab_open = function() {
   if (!isMobile) return;
   tab_container.style.width = '50%';
@@ -108,7 +109,7 @@ function main() {
   if (params.length > 1) {
     app.load_tab(decodeURI(params.pop()));
   } else {
-    app.load_tab('Hello');
+    app.load_tab('About Me');
   }
 
 }
