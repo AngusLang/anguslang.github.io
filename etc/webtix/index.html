@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webtix</title>
+  <link rel="shortcut icon" href="../../image/sample.png" type="image/png">
+  <script src="./webtix.js"></script>
+</head>
+<body>
+  <canvas id="view"></canvas>
+</body>
+<style>
+html, body, canvas {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+</style>
+<script>
+const canvas = document.getElementById('view');
+const renderer = new WTX.Renderer(canvas);
+const engine = new WTX.PathTraceEngine(renderer);
+
+async function main() {
+  const geometry = await WTX.draco_decode('./helmet.drc');
+  engine.set_geometry(geometry);
+  engine.run();
+}
+
+main();
+
+window.save = function() {
+  snapshot_save_canvas(canvas);
+}
+</script>
+</html>
