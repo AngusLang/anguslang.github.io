@@ -4,6 +4,7 @@ html, body {
   font-size: 0;
   background-color: #f1f3f5;
   overflow: scroll;
+  height: 100%;
 }
 
 ::selection {
