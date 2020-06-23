@@ -49,7 +49,7 @@ const mousemove = (event) => {
   const y = event.screenY;
 
   const u = (x - half_screen_width) / screen_width;
-  const v = (half_screen_height - y) / screen_height;
+  const v = (y - half_screen_height) / screen_height;
 
   const l = Math.sqrt(u * u + v * v) * screen_offset;
 
