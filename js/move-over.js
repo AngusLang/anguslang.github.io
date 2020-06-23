@@ -3,7 +3,8 @@ const gallery = document.getElementById('gallery');
 let screen_width, screen_height, half_screen_width, half_screen_height;
 const matrix = new Float32Array(16);
 
-const screen_offset = 10;
+const screen_offset = -50;
+const screen_rotate = 10;
 
 const matrix_rotate_euler = (x, y, z) => {
   const a = Math.cos(x), b = Math.sin(x);
@@ -50,8 +51,12 @@ const mousemove = (event) => {
   const u = (x - half_screen_width) / screen_width;
   const v = (half_screen_height - y) / screen_height;
 
-  gallery.style.transform = `translateZ(0px) rotateX(${v * screen_offset}deg) rotateY(${u * screen_offset}deg)`;
-  tab.style.transform = `translateZ(10px) rotateX(${v * screen_offset}deg) rotateY(${u * screen_offset}deg)`;
+  const l = Math.sqrt(u * u + v * v) * screen_offset;
+
+  const rotate_u = u * screen_rotate * 0.8;
+  const rotate_v = v * screen_rotate * 0.5;
+  gallery.style.transform = `translateZ(${l}px) rotateX(${rotate_v}deg) rotateY(${rotate_u}deg)`;
+  tab.style.transform = `translateZ(${l - 100}px) rotateX(${rotate_v}deg) rotateY(${rotate_u}deg)`;
 }
 
 window.addEventListener('resize', resize, false);
