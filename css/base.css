@@ -28,6 +28,7 @@
   display: inline-block;
   font-size: 14px;
   background-color: #ffffff;
+  overflow: scroll;
 }
 
 #gallery:hover {
@@ -41,6 +42,7 @@
   border-radius: 1px;
   transition: transform 0.3s ease-in;
   transform: translateZ(0px);
+  font-weight: bolder;
 }
 
 .tab-label:hover {

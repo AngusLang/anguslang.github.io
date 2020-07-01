@@ -1,4 +1,5 @@
 const gallery = document.getElementById('gallery');
+const status = document.getElementById('status');
 
 let screen_width, screen_height, half_screen_width, half_screen_height;
 const matrix = new Float32Array(16);
@@ -57,6 +58,7 @@ const mousemove = (event) => {
   const rotate_v = v * screen_rotate * 0.5;
   gallery.style.transform = `translateZ(${l}px) rotateX(${rotate_v}deg) rotateY(${rotate_u}deg)`;
   tab.style.transform = `translateZ(${l - 200}px) rotateX(${rotate_v}deg) rotateY(${rotate_u}deg)`;
+  status.style.transform = `translateZ(${l + 50}px) rotateX(${rotate_v}deg) rotateY(${rotate_u}deg) skewX(-5deg)`;
 }
 
 window.addEventListener('resize', resize, false);

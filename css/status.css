@@ -1,0 +1,51 @@
+#status {
+  display: inline-block;
+  position: fixed;
+  width: 30%;
+  height: 64px;
+  left: 228px;
+  bottom: 100px;
+}
+
+#status-avatar {
+  position: absolute;
+  top: -20px;
+  left: -148px;
+  width: 128px;
+  height: 128px;
+  border-radius: 104px;
+}
+
+#status-avatar img {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #293856;
+  background-color: #293856;
+  border-radius: 74px;
+}
+
+#status-panel {
+  width: 100%;
+  height: 100%;
+}
+
+#status-health-value {
+  width: 100%;
+  height: 30px;
+  background-color: #aaffaa;
+  border: 8px solid #293856;
+  border-radius: 1px;
+}
+
+#status-detail {
+  height: 64px;
+}
+
+#status-detail p {
+  padding-left: 10px;
+  width: 50%;
+  font-size: 11px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #293856;
+}
