@@ -51,12 +51,12 @@ const mousemove = (event) => {
   const u = (x - half_screen_width) / screen_width;
   const v = (y - half_screen_height) / screen_height;
 
-  const l = Math.sqrt(u * u + v * v) * screen_offset;
+  const l = Math.sqrt(Math.sqrt(u * u + v * v)) * screen_offset;
 
   const rotate_u = u * screen_rotate * 0.8;
   const rotate_v = v * screen_rotate * 0.5;
   gallery.style.transform = `translateZ(${l}px) rotateX(${rotate_v}deg) rotateY(${rotate_u}deg)`;
-  tab.style.transform = `translateZ(${l - 100}px) rotateX(${rotate_v}deg) rotateY(${rotate_u}deg)`;
+  tab.style.transform = `translateZ(${l - 200}px) rotateX(${rotate_v}deg) rotateY(${rotate_u}deg)`;
 }
 
 window.addEventListener('resize', resize, false);

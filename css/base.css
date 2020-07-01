@@ -8,7 +8,7 @@
 
 #tab {
   display: inline-block;
-  width: 120%;
+  width: 50%;
   font-size: 14px;
   vertical-align: top;
   position: fixed;
@@ -23,25 +23,28 @@
   position: absolute;
   top: 5%;
   left: calc(50% - 400px);
-  border-radius: 3px;
+  border-radius: 1px;
   padding: 40px;
   display: inline-block;
-  background-color: #fcfcfc;
   font-size: 14px;
-  box-shadow: 0 0 2px #11111133;
-  transition: width 0.6s ease-in-out;
+  background-color: #ffffff;
+}
+
+#gallery:hover {
+  filter: none;
 }
 
 .tab-label {
   cursor: pointer;
   padding: 15px 30px;
   padding-left: 10%;
+  border-radius: 1px;
   transition: transform 0.3s ease-in;
-  transform: translateZ(-50px);
+  transform: translateZ(0px);
 }
 
 .tab-label:hover {
-  transform: translateZ(-40px);
+  transform: translateZ(10px);
 }
 
 .tab-enabled {
