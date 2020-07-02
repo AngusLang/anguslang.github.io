@@ -36,7 +36,7 @@ const grid_animation = (time) => {
   for (let i = 0; i < grid_height; ++i) {
     for (let j = 0; j < grid_width; ++j) {
       const cell = cells[i * grid_width + j];
-      const height = sin_wave(i * 0.3, j * 0.3, time * 0.0005);
+      const height = sin_wave(i * 0.3, j * 0.3, time * 0.00025);
       cell.style.transform = `translateZ(${height * 30}px)`;
 
       const c = (height + 1.0) * 50 + 150;
