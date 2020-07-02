@@ -1,0 +1,15 @@
+#grid {
+  display: inline-block;
+  position: fixed;
+  width: 240%;
+  height: 240%;
+  left: -70%;
+  top: -70%;
+}
+
+.grid-cell {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
