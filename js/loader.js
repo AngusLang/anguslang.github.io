@@ -97,6 +97,8 @@ function App() {
     });
 
     tab_close();
+
+    MathJax.typeset();
   }
 }
 
