@@ -4,6 +4,7 @@
         "bsdf",
         "btdf",
         "eval",
+        "fract",
         "glsl",
         "webtix"
     ]
