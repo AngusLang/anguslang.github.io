@@ -55,7 +55,7 @@
 }
 
 .tab-disabled {
-  background-color: #f1f3f5;
+  background-color: #f1f3f580;
 }
 
 .tab-disabled:hover {
