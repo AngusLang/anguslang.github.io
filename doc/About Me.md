@@ -7,7 +7,7 @@ About Me
 
 ### Contact
 Github:    [github/AngusLang](https://github.com/AngusLang)   
-Twitter:    [Lang](https://twitter.com/89eaj6EU4xX7H4x)
+Twitter:    [Lang](https://twitter.com/89eaj6EU4xX7H4x)   
 Email: lilang8936@gmail.com
 
 ### Employment History
