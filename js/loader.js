@@ -98,7 +98,8 @@ function App() {
 
     tab_close();
 
-    MathJax.typeset();
+    if (window.MathJax)
+      MathJax.typeset();
   }
 }
 
