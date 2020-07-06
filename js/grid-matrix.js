@@ -1,5 +1,5 @@
-const grid_width = 10;
-const grid_height = 15;
+const grid_width = 8;
+const grid_height = 8;
 
 /**
  * Converts an HSL color value to RGB. Conversion formula
@@ -50,12 +50,15 @@ function loop(i) {
   return i * 2.0;
 }
 
+const size = window.innerWidth / 4;
+
 function create_cell() {
   const cell = document.createElement('div');
   cell.className = 'grid-cell';
-  cell.style.width = '200px';
-  cell.style.height = '200px';
-  cell.style.borderRadius = '20px';
+  cell.style.width = `${size}px`;
+  cell.style.height = `${size}px`;
+  cell.style.margin = `${size * 0.02}px`;
+  cell.style.borderRadius = `${size * 0.15}px`;
   return cell;
 }
 
