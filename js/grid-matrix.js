@@ -62,15 +62,6 @@ function create_cell() {
   return cell;
 }
 
-const cells = [];
-for (let i = 0; i < grid_height; ++i) {
-  for (let j = 0; j < grid_width; ++j) {
-    const cell = create_cell();
-    cells.push(cell);
-    grid.appendChild(cell);
-  }
-}
-
 function wave(x, y, time, frequency) {
   return Math.sin(frequency * (x + time)) + Math.cos(frequency * (y + time));
 }
@@ -108,4 +99,12 @@ const grid_animation = (time) => {
   requestAnimationFrame(grid_animation);
 }
 
-grid_animation();
+// const cells = [];
+// for (let i = 0; i < grid_height; ++i) {
+//   for (let j = 0; j < grid_width; ++j) {
+//     const cell = create_cell();
+//     cells.push(cell);
+//     grid.appendChild(cell);
+//   }
+// }
+// grid_animation();
