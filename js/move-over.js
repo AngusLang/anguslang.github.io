@@ -1,6 +1,7 @@
 const gallery = document.getElementById('gallery');
 const status = document.getElementById('status');
 const grid = document.getElementById('grid');
+const wallpaper = document.getElementById('wallpaper');
 
 let screen_width, screen_height, half_screen_width, half_screen_height;
 const matrix = new Float32Array(16);
@@ -48,6 +49,7 @@ const rotate = (u, v) => {
   tab.style.transform = `translateZ(${l - 200}px) rotateX(${rotate_v}deg) rotateY(${rotate_u}deg)`;
   status.style.transform = `translateZ(${l + 50}px) rotateX(${rotate_v}deg) rotateY(${rotate_u}deg) skewX(-5deg)`;
   grid.style.transform = `translateZ(${l - 400}px) rotateX(${rotate_v}deg) rotateY(${rotate_u}deg)`;
+  wallpaper.style.transform = `translateZ(${l - 500}px) rotateX(${rotate_v}deg) rotateY(${rotate_u}deg)`;
 }
 
 const resize = () => {

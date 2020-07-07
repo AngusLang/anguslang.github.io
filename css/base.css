@@ -2,8 +2,19 @@
   font-size: 0;
   width: 100%;
   height: 100%;
-  perspective: 500px;
   display: inline-block;
+  perspective: 500px;
+}
+
+#wallpaper {
+  width: 300%;
+  height: 300%;
+  left: -100%;
+  top: -100%;
+  position: fixed;
+  display: inline-block;
+  background-image: url(/image/pattern.jpg);
+  background-size: 1024px;
 }
 
 #tab {
