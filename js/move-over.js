@@ -69,16 +69,17 @@ const mousemove = (event) => {
   rotate(u, v);
 }
 
-const device_rotate = (event) => {
-  alert(event);
-  const beta = event.beta / 180;
-  const gamma = event.gamma / 90;
-  return rotate(beta, gamma);
-}
-
 window.addEventListener('resize', resize, false);
 window.addEventListener('mousemove', mousemove, false);
-window.addEventListener('deviceorientation', device_rotate, true);
+
+const gn = new GyroNorm();
+gn.init().then(() => {
+  gn.start(data => {
+    const beta = data.do.beta / 180;
+    const gamma = data.do.gamma / 90;
+    rotate(beta, gamma);
+  })
+});
 
 rotate(0, 0);
 
