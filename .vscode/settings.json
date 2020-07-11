@@ -6,6 +6,7 @@
         "eval",
         "fract",
         "glsl",
+        "scrollbar",
         "webtix"
     ]
 }
